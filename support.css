@@ -1,0 +1,231 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkGrey: #03045e;
+    --greyishColor: #c7ccdb;
+    --lightBlueColor: #90e0ef;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    background-color: var(--darkGrey);
+    box-shadow: 2px 2px 20px var(--greyishColor);
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+nav h2 {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 18px;
+    margin-left: 0;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li a {
+    height: 50px;
+    line-height: 43px;
+    margin: 8px;
+    padding: 0px 12px;
+    display: flex;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    border-radius: 8px;
+    background-color: var(--lightBlueColor);
+    color: var(--darkGrey);
+}
+
+
+/*end nav*/
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.chat{
+    position:absolute;
+    top:8%;
+    left:18%;
+}
+
+.main {
+    width: 65%;
+    max-height: 540px;
+    height: 90vh;
+    margin-top: 50px;
+    margin-left: 70px;
+    background-image: url(https://cdn.discordapp.com/attachments/1096038997396029491/1097155059743211529/LTQ4NzMuanBn.png);
+    background-size: cover;
+}
+
+.main h2 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:1px grey groove;
+    border-radius:5px;
+    color: var(--darkGrey);
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+#agent {
+    width: 48px;
+    height: 48px;
+    background-image: url(https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/1x/external-customer-agent-cyber-monday-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png);
+    background-size: cover;
+    margin: 10px;
+}
+
+#head {
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+#mes_area {
+    height: 82%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 0 12px;
+}
+
+#input {
+    height: 7%;
+    width: 63%;
+    min-height: 48px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 8px 16px;
+    border-radius: 32px;
+    background: linear-gradient(#ececee 50%, var(--darkGrey) 50%);
+    box-shadow: inset none 1px none #777;
+    margin-left: 76px;
+}
+
+#send fa-paper-plane {
+    position: relative;
+    top: 3px;
+    left: 5px;
+    width:18px;
+    height:18px;
+    color: white;
+}
+
+#text {
+    outline: none;
+    font-size: 20px;
+    background-color: #ececee;
+    color: #333;
+    border-radius: 32px 0 32px 32px;
+    padding: 0 16px;
+    border: 1px solid #777;
+}
+
+#send {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    font-size: 24px;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 0 32px 32px 0;
+    transition-duration: 0.2s;
+    background-color: var(--darkGrey);
+    color: white;
+}
+
+    #send:active {
+        font-size: 18px;
+    }
+
+.left, .right {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    width: auto;
+    max-width: 60%;
+    padding: 14px;
+    word-wrap: break-word;
+    margin: 8px 14px;
+}
+
+.left {
+    color: #000;
+    background-color: var(--greyishColor);
+    border-radius: 0 32px 32px 32px;
+}
+
+.right {
+    color: #fff;
+    background-color: var(--darkGrey);
+    border-radius: 32px 0 32px 32px;
+    float: right;
+}
+
+.msg_con1 {
+    width: 100%;
+    display: inline-block;
+}
+
+/*Footer*/
+.footer {
+    background-image: url(https://bento.cdn.pbs.org/hostedbento-prod/filer_public/master%20images/SECE/Travel/travelimagetransparent.png);
+    background-size: cover;
+    height: 50vh;
+    position: absolute;
+    top: 800px;
+    width:100%;
+}
+
+.fa-brands {
+    font-size: 30px;
+    color: var(--darkGrey);
+    display: flex;
+    margin: 15px;
+    margin-right: 28px;
+}
+
+.icons {
+    float: right;
+}

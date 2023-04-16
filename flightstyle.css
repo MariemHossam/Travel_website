@@ -1,0 +1,270 @@
+﻿* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+:root {
+    --darkGrey: #03045e;
+    --greyishColor: #c7ccdb;
+    --lightBlueColor: #90e0ef;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    background-color: var(--darkGrey);
+    box-shadow: 2px 2px 20px var(--greyishColor);
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+    nav h2 {
+        font-size: 50px;
+        font-weight: 900;
+        margin: 18px;
+        margin-left: 0;
+        color: white;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        nav ul li a {
+            height: 50px;
+            line-height: 43px;
+            margin: 8px;
+            padding: 0px 12px;
+            display: flex;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: white;
+            transition: 0.3s ease-in-out;
+        }
+
+            nav ul li a:hover {
+                border-radius: 8px;
+                background-color: var(--lightBlueColor);
+                color: var(--darkGrey);
+            }
+
+/*Animations Functions*/
+@keyframes textStyle {
+    from {
+        font-size: 52px;
+        color: navy;
+    }
+
+    to {
+        font-size: 48px;
+        color: black;
+    }
+}
+
+/*Page Header*/
+.FlightHeader {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font: bolder italic 84px 'Bookman Old Style', verdana;
+    /*text-shadow: 2px 2px grey;*/
+    /*animation: textStyle;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;*/
+    cursor: default;
+    background-image: url(https://i.giphy.com/media/l2Sq87bt4GOdAnlGo/giphy.webp);
+    background-size: contain;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/*Search options*/
+.FlightOptions {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+.options {
+    border-radius: 2px 4px;
+    border: groove;
+    font-size: 24px;
+    align-content: center;
+    display: flex;
+    cursor: pointer;
+    margin: 2px 6px 2px 6px;
+}
+
+.icons1 {
+    width: 26px;
+    height: 26px;
+}
+
+.icons2 {
+    width: 12px;
+    height: 12px;
+    margin: auto;
+}
+
+.options h3 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#arrow {
+    transform: rotate(180deg);
+}
+
+#passengers_count {
+    user-select: none;
+}
+
+#passe {
+    background-color: white;
+}
+
+.passengers {
+    background-color: white;
+    position: absolute;
+    display: none;
+    text-align: left;
+    border-radius: 5px;
+    padding: 4px 5px 4px 5px;
+    font-size: 20px;
+    line-height: 30px;
+    border: 1px groove grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 3;
+}
+
+.passval {
+    float: right;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: auto;
+}
+
+.confirm {
+    border-radius: 6px 8px;
+    border: 1px groove var(--greyishColor);
+    background-color: var(--darkGrey);
+    color: white;
+    font-size: 14px;
+    width: 68px;
+    height: 24px;
+}
+
+    .confirm:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+#con_message {
+    display: none;
+    font-size: 12px;
+}
+
+/*Flight Details*/
+.FlightDetails {
+    position: absolute;
+    top: 57%;
+    left: 15.4%;
+}
+
+    .FlightDetails input {
+        font-size: 24px;
+    }
+
+/*The Flights*/
+.content {
+    position: absolute;
+    top: 64%;
+    left: 15.4%;
+    border-collapse: separate;
+    background-color: white;
+}
+
+    .content tr {
+        border: 2px solid grey;
+        border-radius: 5px 6px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+.contentImgs {
+    width: 128px;
+    height: 128px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.period {
+    font-size: 24px;
+}
+
+table p {
+    font-size: 18px;
+    color: darkslategray;
+}
+
+.price {
+    font: bolder 20px 'Bookman Old Style', verdana;
+    float: right;
+    margin-right: 5px;
+}
+
+.select {
+    border-radius: 8px 12px;
+    border: 1px groove grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font: bolder italic 18px 'Bookman Old Style', verdana;
+    height: 32px;
+    width: 140px;
+    float: right;
+    margin-right: 15px;
+    color:white;
+    background-color:var(--darkGrey);
+}
+
+    .select:hover {
+        color:var(--darkGrey);
+        background-color: var(--lightBlueColor);
+    }
+
+/*Footer*/
+.footer {
+    background-image: url(https://bento.cdn.pbs.org/hostedbento-prod/filer_public/master%20images/SECE/Travel/travelimagetransparent.png);
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+    top: 1350px;
+}
+
+.fa-brands {
+    font-size: 30px;
+    color: var(--darkGrey);
+    display: flex;
+    margin: 15px;
+    margin-right: 28px;
+}
+
+.icons {
+    float: right;
+}

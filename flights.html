@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FlightPage</title>
+    <link href="flightstyle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="flightscript.js" type="text/javascript"></script>
+</head>
+<body>
+    <!--------------------------------- Nav bar ---------------------------------------------------------------->
+    <nav>
+        <h2>Travelly</h2>
+        <div class="nav-links">
+            <ul class="menu">
+                <li>  <a href="index.html"> Home</a> </li>
+                <li><a href="explore.html">explore</a> </li>
+                <li><a href="flights.html">flights</a> </li>
+                <li><a href="About-Us.html"> about us </a> </li>
+                <li><a href="support.html"> support </a> </li>
+                <li><a href="reviews.html"> reviews </a> </li>
+                <li><a href="index.html"> Log Out </a> </li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------------------------------------------------------->
+    <p class="FlightHeader" align="center">
+        Book Your Flight
+    </p>
+
+    <table class="FlightOptions" cellspacing="7" cellpadding="8" border="0">
+        <tr>
+            <th>
+                <select class="options">
+                    <option>Round Trip</option>
+                    <option>One Way</option>
+                    <option>Multi-City</option>
+                </select>
+            </th>
+            <th>
+                <div class="options" id="passe" onclick="displayList()">
+                    <img class="icons1" src="https://img.icons8.com/fluency-systems-filled/1x/user.png" alt="User icon" />
+                    <h3 id="passengers_count"> 1 </h3>
+                    <img class="icons2" id="arrow" src="https://img.icons8.com/sf-black/1x/collapse-arrow.png" alt="Collapse Arrow icon" />
+                </div>
+                <div class="passengers" id="passdrop">
+                    <div>
+                        <label>Adults</label>
+                        <input type="number" class="passval" value="1" min="0" max="9" id="num1" /><br />
+                    </div>
+                    <div>
+                        <label>Children</label>
+                        <input type="number" class="passval" value="0" min="0" max="9" id="num2" /><br />
+                    </div>
+                    <button class="passval confirm" onclick="calCount()">Done</button><br />
+                    <p id="con_message">Sorry The maximum number of passengers is 9</p>
+                </div>
+            </th>
+            <th>
+                <select class="options">
+                    <option>Economy</option>
+                    <option>Premium economy</option>
+                    <option>Business</option>
+                    <option>First Class</option>
+                </select>
+            </th>
+        </tr>
+    </table>
+
+    <table class="FlightDetails" cellspacing="7" cellpadding="8" border="0">
+        <tr>
+            <td>
+                <input type="text" list="fromList" placeholder="From" />
+                <datalist id="fromList">
+                    <option>Argentina</option>
+                    <option>Austria</option>
+                    <option>Bahamas</option>
+                    <option>Belgium</option>
+                    <option>Brazil</option>
+                    <option>Canada</option>
+                    <option>China</option>
+                    <option>Cuba</option>
+                    <option>Egypt</option>
+                    <option>Iceland</option>
+                    <option>Thailand</option>
+                    <option>United Arab Emirates</option>
+                    <option>United States of America</option>
+                    <option>Venezuela</option>
+                </datalist>
+            </td>
+            <td>
+                <input type="text" list="toList" placeholder="To" />
+                <datalist id="toList">
+                    <option>Argentina</option>
+                    <option>Austria</option>
+                    <option>Bahamas</option>
+                    <option>Belgium</option>
+                    <option>Brazil</option>
+                    <option>Canada</option>
+                    <option>China</option>
+                    <option>Cuba</option>
+                    <option>Egypt</option>
+                    <option>Iceland</option>
+                    <option>Thailand</option>
+                    <option>United Arab Emirates</option>
+                    <option>United States of America</option>
+                    <option>Venezuela</option>
+                </datalist>
+            </td>
+            <td>
+                <input type="date" />
+            </td>
+        </tr>
+    </table>
+
+    <table class="content" cellspacing="7" cellpadding="8" border="0" width="70%">
+        <tr class="flights">
+            <td>
+                <div>
+                    <img class="contentImgs" src="https://iconape.com/wp-content/files/qa/380035/png/380035.png" />
+                </div>
+            </td>
+            <td>
+                <b class="period">05:00 - 08:25</b><br />
+                <p>EgyptAir</p>
+            </td>
+            <td>
+                <b class="period">3 hrs 25 min</b><br />
+                <p>from Egy to Can</p>
+            </td>
+            <td>
+                <b class="price">EGP 13,416</b>
+            </td>
+            <td>
+                <button class="select" onclick="redirect('index.html')">Select flight</button>
+            </td>
+        </tr>
+        <tr class="flights">
+            <td>
+                <div>
+                    <img class="contentImgs" src="https://images.cdn.centreforaviation.com/stories/companies/airlines/lot/lot_logo-1024x.png" />
+                </div>
+            </td>
+            <td>
+                <b class="period">05:00 - 08:25</b><br />
+                <p>EgyptAir</p>
+            </td>
+            <td>
+                <b class="period">3 hrs 25 min</b><br />
+                <p>from Egy to Can</p>
+            </td>
+            <td>
+                <b class="price">EGP 10,830</b>
+            </td>
+            <td>
+                <button class="select" onclick="redirect('index.html')">Select flight</button>
+            </td>
+        </tr>
+        <tr class="flights">
+            <td>
+                <div>
+                    <img class="contentImgs" src="https://iconape.com/wp-content/files/qa/380035/png/380035.png" />
+                </div>
+            </td>
+            <td>
+                <b class="period">05:00 - 08:25</b><br />
+                <p>EgyptAir</p>
+            </td>
+            <td>
+                <b class="period">3 hrs 25 min</b><br />
+                <p>from Egy to Can</p>
+            </td>
+            <td>
+                <b class="price">EGP 8,830</b>
+            </td>
+            <td>
+                <button class="select" onclick="redirect('index.html')">Select flight</button>
+            </td>
+        </tr>
+        <tr class="flights">
+            <td>
+                <div>
+                    <img class="contentImgs" src="https://iconape.com/wp-content/files/qa/380035/png/380035.png" />
+                </div>
+            </td>
+            <td>
+                <b class="period">05:00 - 08:25</b><br />
+                <p>EgyptAir</p>
+            </td>
+            <td>
+                <b class="period">3 hrs 25 min</b><br />
+                <p>from Egy to Can</p>
+            </td>
+            <td>
+                <b class="price">EGP 6,950</b>
+            </td>
+            <td>
+                <button class="select" onclick="redirect('index.html')">Select flight</button>
+            </td>
+        </tr>
+        <tr class="flights">
+            <td>
+                <div>
+                    <img class="contentImgs" src="https://iconape.com/wp-content/files/qa/380035/png/380035.png" />
+                </div>
+            </td>
+            <td>
+                <b class="period">05:00 - 09:00</b><br />
+                <p>EgyptAir</p>
+            </td>
+            <td>
+                <b class="period">4 hrs 00 min</b><br />
+                <p>from Egy to Can</p>
+            </td>
+            <td>
+                <b class="price">EGP 10,830</b>
+            </td>
+            <td>
+                <button class="select" onclick="redirect('index.html')">Select flight</button>
+            </td>
+        </tr>
+        <tr class="flights">
+            <td>
+                <div>
+                    <img class="contentImgs" src="https://iconape.com/wp-content/files/qa/380035/png/380035.png" />
+                </div>
+            </td>
+            <td>
+                <b class="period">03:00 - 06:25</b><br />
+                <p>EgyptAir</p>
+            </td>
+            <td>
+                <b class="period">3 hrs 25 min</b><br />
+                <p>from Egy to Can</p>
+            </td>
+            <td>
+                <b class="price">EGP 11,630</b>
+            </td>
+            <td>
+                <button class="select" onclick="redirect('index.html')">Select flight</button>
+            </td>
+        </tr>
+    </table>
+    <!--------------------FOOTER---------------------->
+    <div class="footer">
+        <div class="icons">
+            <br />
+            <br />
+            <br />
+            <i class="fa-brands fa-facebook"></i><br />
+            <i class="fa-brands fa-instagram"></i><br />
+            <i class="fa-brands fa-github"></i><br />
+            <i class="fa-brands fa-linkedin"></i><br />
+        </div>
+    </div>
+</body>
+</html>

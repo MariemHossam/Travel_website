@@ -1,0 +1,463 @@
+﻿* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    user-select:none;
+}
+
+:root {
+    --darkGrey: #03045e;
+    --greyishColor: #c7ccdb;
+    --lightBlueColor: #90e0ef;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    background-color: var(--darkGrey);
+    box-shadow: 2px 2px 20px var(--greyishColor);
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+nav h2 {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 18px;
+    margin-left: 0;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li a {
+    height: 50px;
+    line-height: 43px;
+    margin: 8px;
+    padding: 0px 12px;
+    display: flex;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    border-radius: 8px;
+    background-color: var(--lightBlueColor);
+    color: var(--darkGrey);
+}
+
+
+/*end nav*/
+
+/*home page*/
+
+.homebody {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(images/homepic.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.home {
+    margin-top:55px;
+    height: 40%;
+    text-align: center;
+    color: #fff;
+}
+
+.home h1 {
+    font-size: 40px;
+}
+
+.home p {
+    font-size: 20px;
+}
+
+.home a {
+    text-decoration: none;
+    color:var(--darkGrey);
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 45px;
+    padding: 14px 50px;
+    background-color: #fff;
+}
+
+.home a:hover {
+    color: white;
+    background-color:var(--darkGrey);
+    transition: 0.6s;
+}
+
+/*end home page*/
+/*explore page*/
+.explore {
+    text-align: center;
+    margin-top: 150px;
+    color: var(--darkGrey);
+    font-size: 38px;
+    font-weight: 600;
+}
+.table-about {
+    margin-top:20px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(auto);
+    padding: 50px;
+    padding-top: 17px;
+    padding-bottom:20px;
+    gap: 40px;
+    height:50vh;
+}
+.area1 {
+    background-image: url(images/pic1.jpg);
+    background-size: cover;
+    border-radius: 14px;
+    box-shadow: 0px 50px 90px 0px rgba(0, 0, 0, 0.25);
+}
+
+.area2 {
+    background-image: url(images/pic3.jpg);
+    background-size: cover;
+    border-radius: 14px;
+    box-shadow: 0px 50px 90px 0px rgba(0, 0, 0, 0.25);
+}
+
+.area3 {
+    background-image: url(images/pic2.avif);
+    background-size: cover;
+    border-radius: 14px;
+    box-shadow: 0px 50px 90px 0px rgba(0, 0, 0, 0.25);
+}
+.table-about h2 {
+    font-size: 40px;
+    margin-left:20px;
+    margin-top: 240px;
+    color:white;
+    font-weight: 500;
+}
+/*text*/
+.text {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(auto);
+    padding:0 60px;
+    gap: 60px;
+}
+.text1, .text2, .text3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #525252;
+}
+
+/*second table*/
+
+.table2-about {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(auto);
+    padding: 50px;
+    gap: 60px;
+}
+.area11 {
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.30)),url(images/pic4.jpeg);
+    background-size: cover;
+    border-radius: 14px;
+    height:40vh;
+}
+.area12 {
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.30)),url(images/pic1.jpg);
+    background-size: cover;
+    border-radius: 14px;
+}
+.table2-about h2 {
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+}
+.table2-about p {
+    margin-top: 10px;
+    margin-left: 30px;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+}
+.table2-about a {
+    color: var(--darkGrey);
+    background-color:var(--lightBlueColor);
+    width: 130px;
+    height: 40px;
+    display: flex;
+    position:relative;
+    top: 20px;
+    left: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    border:none;
+}
+.table2-about a:hover{
+    background-color:var(--darkGrey);
+    color:white;
+}
+
+.header h2 {
+    text-align: center;
+    color: var(--darkGrey);
+    font-size: 40px;
+}
+
+.travel {
+    width:74%;
+    display: grid;
+    grid-template-columns: repeat(2,45%);
+    grid-template-rows: repeat(3,40.4%);
+    padding:60px 100px;
+    gap: 40px;
+    margin-bottom:160px;
+    margin-left:-32px;
+}
+
+.flight1,.flight2,.flight3,.flight4,.flight5,.flight6{
+    border:1px solid black;
+    border-radius:12px;
+}
+
+.flight1:hover,.flight2:hover,.flight3:hover,.flight4:hover,.flight5:hover,.flight6:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flight5 .describtion{
+    top:15px;
+    left:-38%;
+}
+
+.flight5 .describtion2{
+     top:85px;
+    left:80px;
+}
+
+.flight3 .describtion{
+    top:15px;
+    left:-40%;
+}
+
+.flight3 .describtion2{
+     top:85px;
+    left:76px;
+}
+
+.flight2 .describtion{
+    top:15px;
+    left:-46%;
+}
+
+.flight2 .describtion2{
+     top:85px;
+    left:48px;
+}
+
+.flight4 .describtion{
+    top:15px;
+    left:-44%;
+}
+
+.flight4 .describtion2{
+     top:85px;
+    left:59px;
+}
+
+.travel img {
+    width: 35%;
+    height: 100%;
+    border-radius: 12px 0 0 12px;
+}
+
+.describtion {
+    float: right;
+    position:relative;
+    top:15px;
+    left:-42%;
+}
+
+.describtion h3{
+    color:var(--darkGrey);
+    font-size:25px;
+}
+
+.describtion h5{
+    color:var(--darkGrey);
+    font-size:15px;
+}
+
+.describtion2{
+    float:right;
+    position:relative;
+    top:85px;
+    left:66px;
+}
+
+.describtion2 h3{
+    color:var(--darkGrey);
+    font-size:25px;
+}
+
+.describtion2 h6{
+    color:grey;
+    font-size:13px;
+}
+
+.fa-plane-departure{
+    color:var(--darkGrey);
+    position:relative;
+    left:-30px;
+    top:23px;
+}
+
+.map {
+    position: absolute;
+    top:1095px;
+    left:1000px;
+   margin-right:40px;
+}
+.map img{
+     height:588px;
+     width:486px;
+     border-radius:10px;
+}
+
+
+/*end explore page*/
+/*footer*/
+.footer {
+    background-image: url(images/footer.png);
+    background-size: cover;
+    height: 50vh;
+}
+.fa-brands{
+    font-size:30px;
+    color:var(--darkGrey);
+    display:flex; 
+    margin:15px;
+    margin-right:28px;
+}
+.icons{
+    float:right;
+}
+
+/*reviews page*/
+.main {
+    margin-top: 90px;
+    text-align: center;
+}
+.main h2{
+    color:var(--darkGrey);
+    font-size:40px;
+    padding:25px;
+    padding-bottom:15px;
+}
+.main h3{
+    color:var(--darkGrey);
+    font-size:30px;
+    font-weight:500;
+    padding-bottom:15px;
+}
+.reviewsTable {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 40px;
+    padding: 50px;
+    align-items: center;
+}
+.main img{
+    width:80%;
+}
+
+.writeReview{
+    text-align:center;
+    align-content:center;
+}
+
+.writeReview h2 {
+    color: var(--darkGrey);
+    font-size: 35px;
+    padding: 25px;
+    padding-bottom: 15px;
+}
+.writeReview h4{
+    color:var(--darkGrey);
+    font-size:24px;
+    font-weight:500;
+    padding-bottom:25px;
+    margin:0 40px;
+    width:45%;
+    position:relative;
+    left:25%;
+}
+.search-bar input {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    border: 0px;
+    position:relative;
+    left:-26px;
+    width:82%;
+}
+.search-bar{
+    position:relative;
+    left:33%;
+    width:35%;
+    border-radius:23px;
+    border:1px solid grey;
+    padding:7px 10px;
+    margin-bottom:20px;
+}
+.fa-magnifying-glass{
+    font-size:18px;
+    float:left;
+    position:relative;
+    top:6px;
+    left:4px;
+}
+
+/*support page*/
+
+.support-header{
+    margin-top:120px;
+}
+.support-header h2{
+    color:var(--darkGrey);
+    font-size:32px;
+}
+
+.support-header h5{
+    color:grey;
+    font-size:16px;
+}
