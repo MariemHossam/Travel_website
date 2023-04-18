@@ -40,7 +40,8 @@ function Conve() {
         var message = document.getElementById("mes_area");
         message.appendChild(con2);
         con2.appendChild(msg_res);
-        msg_res.innerHTML = "thank you for the information, someone will get back to you shortly";
+        var x = msg_req.innerHTML.toLowerCase();
+        msg_res.innerHTML = validate(x);
     }
     document.getElementById("text").value = "";
     document.getElementById("mes_area").scrollTop = document.getElementById("mes_area").scrollHeight;
@@ -51,3 +52,27 @@ document.addEventListener('keypress', function (event) {
         Conve(); 
     }
 });
+
+
+function validate(x) {
+    let y = "";
+    if (x.includes("book") || x.includes("flight")) {
+        y = "you can know more about your flight from flights page";
+    }
+    else if (x.includes("crew") || x.includes("develop")) {
+        y = "you can find more info about the developers in the About Us page";
+    }
+    else if (x.includes("bye") || x.includes("thank")) {
+        y = "Glad I could help ❤️";
+    }
+    else if (x.includes("hi") || x.includes("hello") || x.includes("good")) {
+        y = "Hello, how can i help you today";
+    }
+    else if (x.includes("help")) {
+        y = "Goto explore page to see hot deals <br> flight page to book a flight";
+    }
+    else {
+        y = "thank you for the information, someone will get back to you shortly";
+    }
+    return y
+}

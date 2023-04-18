@@ -1,0 +1,216 @@
+﻿:root {
+    --darkGrey: #03045e;
+    --greyishColor: #c7ccdb;
+    --lightBlueColor: #90e0ef;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    background-color: var(--darkGrey);
+    box-shadow: 2px 2px 20px var(--greyishColor);
+    z-index: 1;
+    width: 96%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+    nav h2 {
+        font-size: 50px;
+        font-weight: 900;
+        margin: 18px;
+        margin-left: 0;
+        color: white;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        margin-right: 79px;
+    }
+
+        nav ul li a {
+            height: 50px;
+            line-height: 43px;
+            margin: 8px;
+            padding: 0px 12px;
+            display: flex;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: white;
+            transition: 0.3s ease-in-out;
+        }
+
+            nav ul li a:hover {
+                border-radius: 8px;
+                background-color: var(--lightBlueColor);
+                color: var(--darkGrey);
+            }
+
+
+body {
+    margin-top: 70px;
+    /*background-image: url("./imgs/pic.jpg");*/
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+.photo {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(auto);
+    margin-left: 100px;
+}
+
+.div1 {
+    margin: 50px 0px 0px 50px;
+}
+
+.photo1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.para1 {
+    margin-left: 20px;
+}
+
+
+#para1 {
+    margin-left: 80px;
+}
+
+.icon1 {
+    width: 50px;
+    height: 50px;
+    margin-left: 120px;
+}
+
+.div2 {
+    margin-top: 50px;
+}
+
+.para2 {
+    margin-left: 60px;
+}
+
+.icon2 {
+    width: 50px;
+    height: 50px;
+    margin-left: 120px;
+}
+
+.para3 {
+    margin-left: 40px;
+    color: black;
+}
+
+#para3 {
+    margin-left: 100px;
+    color: black;
+}
+
+.icon3 {
+    width: 50px;
+    height: 50px;
+    margin-left: 120px;
+}
+
+.photo2 {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(auto);
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.photo3 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    margin-left: 260px;
+}
+
+.para4 {
+    margin-left: 300px;
+}
+
+#para4 {
+    margin-left: 350px;
+}
+
+.icon4 {
+    width: 50px;
+    height: 50px;
+    margin-left: 375px;
+}
+
+.photo4 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    margin-left: -130px;
+}
+
+.para5 {
+    margin-left: -75px;
+}
+
+#para5 {
+    margin-left: -30px;
+}
+
+.icon5 {
+    width: 50px;
+    height: 50px;
+}
+
+.photo1:hover, .photo3:hover, .photo4:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.icon1:hover, .icon2:hover, .icon3:hover, .icon4:hover, .icon5:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+}
+
+.footer {
+    background-image: url(https://bento.cdn.pbs.org/hostedbento-prod/filer_public/master%20images/SECE/Travel/travelimagetransparent.png);
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+    top: 10vh;
+}
+
+.fa-brands {
+    font-size: 30px;
+    color: var(--darkGrey);
+    display: flex;
+    margin: 15px;
+    margin-right: 28px;
+}
+
+.icons {
+    float: right;
+}

@@ -1,0 +1,205 @@
+﻿::-webkit-scrollbar {
+    width: 0%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri, Helvetica, sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(images/homepic.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+:root {
+    --darkGrey: #03045e;
+    --greyishColor: #c7ccdb;
+    --lightBlueColor: #90e0ef;
+}
+
+.main {
+    margin-top: 60px;
+    z-index: 3;
+    width: 100%;
+}
+
+.container {
+    width: 40%;
+    height: 80%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px 0 30px 0;
+}
+
+.username, .password, .country, .phone {
+    width: 40%;
+    margin: 1px 0;
+    padding: 5px 5px 5px 5px;
+    display: inline-block;
+    border: 2px solid #023e8a;
+    box-sizing: border-box;
+    background-color: white;
+    vertical-align: central;
+}
+
+button {
+    background-color: var(--darkGrey);
+    width: 49.7%;
+    color: white;
+    padding: 15px;
+    margin: 10px 0px;
+    border: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+    button:hover {
+        background-color: var(--lightBlueColor);
+        color: var(--darkGrey);
+        font-weight: 500;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        opacity: 1;
+    }
+
+.btn {
+    border-radius: 14px;
+    padding: 11px 0;
+    width: 27%;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+
+.cancelbtn, .signupbtn {
+    border-radius: 14px;
+    padding: 11px 0;
+    width: 27%;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+
+.close {
+    font-size: 45px;
+    font-weight: 600;
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+.close:hover{
+    cursor:pointer;
+}
+
+
+.fb {
+    color: #3B5998;
+    height: 50%;
+}
+
+.twitter {
+    color: #55ACEE;
+    height: 50%;
+}
+
+.google {
+    color: #ff0000;
+    height: 50%;
+}
+
+input[type=text], input[type=password] {
+    border: 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+
+.username img, .password img, .col img, .phone img {
+    margin: 1px 0;
+    padding: 3px 2px;
+    height: 16px;
+    vertical-align: bottom;
+}
+
+
+.col {
+    width: 100%;
+    margin-top: 0;
+    font-size: 26px;
+}
+
+    .col img {
+        width: 26px;
+        height: 26px;
+        margin-left: 18px;
+    }
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: white;
+    outline: none;
+}
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+h1 {
+    overflow: hidden;
+    text-align: center;
+}
+
+h3:before, h3:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 15%;
+}
+
+h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+#signin {
+    display: none;
+}
+
+#signup {
+    display: block;
+}
